@@ -20,17 +20,19 @@ vim.opt.rtp:prepend(lazypath)
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
+-- leader and local leader (latter for conjure)
+-- non-relative line numbers
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 vim.o.tabstop = 4
--- 100 chars vertical line
-vim.opt.colorcolumn = '100'
+vim.o.softtabstop = 0
+vim.o.shiftwidth = 0
+vim.o.expandtab = true
+vim.opt.colorcolumn = '100'  -- 100 chars vertical line
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey1]]
-vim.opt.textwidth = 100
--- leader and local leader (latter for conjure)
--- non-relative line numbers
-vim.opt.number = true
-vim.opt.relativenumber = false
+vim.o.textwidth = 100
+vim.o.number = true
+vim.o.relativenumber = false
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
