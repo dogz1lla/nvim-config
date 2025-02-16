@@ -2,7 +2,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     config = function()
-    local treesitter = require("nvim-treesitter.configs")
+        local treesitter = require("nvim-treesitter.configs")
         -- configure treesitter
         treesitter.setup({ -- enable syntax highlighting
             ensure_installed = {
