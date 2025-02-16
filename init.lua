@@ -3,3 +3,7 @@
 
 -- lazy, see https://lazy.folke.io/installation
 require("config.lazy")
+
+-- load config files
+require("config.options")
+require("config.keymap")

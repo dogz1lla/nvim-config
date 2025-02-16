@@ -16,35 +16,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
--- gz custom stuff. TODO: put these options into a separate file, load before lazy
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
--- leader and local leader (latter for conjure)
--- non-relative line numbers
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
-vim.o.tabstop = 4
-vim.o.softtabstop = 0
-vim.o.shiftwidth = 0
-vim.o.expandtab = true
-vim.opt.colorcolumn = '100'  -- 100 chars vertical line
-vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey1]]
-vim.o.textwidth = 100
-vim.o.number = true
-vim.o.relativenumber = false
-
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
--- Decrease update time
-vim.opt.updatetime = 250
--- Decrease mapped sequence wait time
--- Displays which-key popup sooner
-vim.opt.timeoutlen = 300
--- Always reserve and show one col for git symbols
-vim.opt.signcolumn = "yes:1"
 
 
 -- Setup lazy.nvim
