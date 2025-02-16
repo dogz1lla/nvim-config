@@ -20,6 +20,7 @@ return {
                 "vim",
                 "yaml",
                 "vimdoc",
+                "comment",
             },
             highlight = {
                 enable = true,
