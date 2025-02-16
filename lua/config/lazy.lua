@@ -43,6 +43,8 @@ vim.opt.updatetime = 250
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
 vim.opt.timeoutlen = 300
+-- Always reserve and show one col for git symbols
+vim.opt.signcolumn = "yes:1"
 
 
 -- Setup lazy.nvim
