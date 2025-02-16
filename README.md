@@ -11,5 +11,5 @@ Lightweight build of neovim. Loosely based on [bread's build](https://github.com
 
 # TODOs
 - [ ] add and configure which-key
-- [ ] add fzf-lua [keybinds](https://github.com/ibhagwan/fzf-lua?tab=readme-ov-file#commands)
-- [ ] figure out the nerd-font and icons everywhere
+- [x] add fzf-lua [keybinds](https://github.com/ibhagwan/fzf-lua?tab=readme-ov-file#commands)
+- [x] figure out the nerd-font and icons everywhere
