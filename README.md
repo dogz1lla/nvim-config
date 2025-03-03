@@ -8,6 +8,9 @@ Lightweight build of neovim. Loosely based on [bread's build](https://github.com
 - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [conjure](https://github.com/Olical/conjure)
+- [mason](https://github.com/williamboman/mason.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
 # TODOs
 - [ ] add and configure which-key

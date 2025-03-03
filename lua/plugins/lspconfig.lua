@@ -6,10 +6,7 @@ return { -- LSP Configuration & Plugins
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
         'WhoIsSethDaniel/mason-tool-installer.nvim',
-
-        -- -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
-        -- -- used for completion, annotations and signatures of Neovim apis
-        -- { 'folke/neodev.nvim', opts = {} },
+        'hrsh7th/nvim-cmp',
     },
     config = function()
         -- If you're wondering about lsp vs treesitter, you can check out the wonderfully
@@ -55,6 +52,9 @@ return { -- LSP Configuration & Plugins
         --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
         --  - settings (table): Override the default settings passed when initializing the server.
         --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+        local capabilities = vim.lsp.protocol.make_client_capabilities()
+        capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
+
         local servers = {
             gopls = {
                 settings = {
@@ -88,8 +88,11 @@ return { -- LSP Configuration & Plugins
                         completion = {
                             callSnippet = 'Replace',
                         },
-                    -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-                    -- diagnostics = { disable = { 'missing-fields' } },
+                        diagnostics = { -- disables lua lsp complaining about vim var
+                            globals = { "vim" },
+                        },
+                        -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
+                        -- diagnostics = { disable = { 'missing-fields' } },
                     },
                 },
             },
@@ -112,7 +115,7 @@ return { -- LSP Configuration & Plugins
                     -- This handles overriding only values explicitly passed
                     -- by the server configuration above. Useful when disabling
                     -- certain features of an LSP (for example, turning off formatting for tsserver)
-                    server.capabilities = vim.tbl_deep_extend('force', {}, {}, server.capabilities or {})
+                    server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
                     require('lspconfig')[server_name].setup(server)
                 end,
             },
