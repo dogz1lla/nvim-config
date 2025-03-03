@@ -30,8 +30,8 @@ map("n", "<leader>Ff", ":lua require('fzf-lua').files({ cwd = '..' })<CR>") --se
 map("n", "<leader>Fr", ":lua require('fzf-lua').resume()<CR>") --last search
 map("n", "<leader>g", ":lua require('fzf-lua').grep()<CR>") --grep
 map("n", "<leader>G", ":lua require('fzf-lua').grep_cword()<CR>") --grep word under cursor
-map("n", "<leader>gs", ":lua require('fzf-lua').git_status()<CR>") --grep word under cursor
-map("n", "<leader>gc", ":lua require('fzf-lua').git_commits()<CR>") --grep word under cursor
+map("n", "<leader>gs", ":lua require('fzf-lua').git_status()<CR>") --git status
+map("n", "<leader>gc", ":lua require('fzf-lua').git_commits()<CR>") --git commit history
 
 -- misc
 map("n", "<leader>s", ":%s//g<Left><Left>") --replace all
