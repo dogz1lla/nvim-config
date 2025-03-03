@@ -94,7 +94,7 @@ return {
             dashboard.button("f", "▪ Find file", ":lua require('fzf-lua').files() <CR>"),
             dashboard.button("t", "▪ Browse cwd", ":NvimTreeOpen<CR>"),
             -- dashboard.button("s", "▪ Browse scripts", ":e ~/scripts/<CR>"),
-            dashboard.button("c", "▪ Config", ":e ~/.config/nvim-config/<CR>"),
+            dashboard.button("c", "▪ Config", ":e ~/.config/nvim-lite/<CR>"),
             dashboard.button("q", "▪ Quit", ":q!<CR>"),
         }
 
