@@ -11,6 +11,8 @@ Lightweight build of neovim. Loosely based on [bread's build](https://github.com
 - [conjure](https://github.com/Olical/conjure)
 - [mason](https://github.com/williamboman/mason.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [which-key](https://github.com/folke/which-key.nvim)
+- [parinfer](https://github.com/gpanders/nvim-parinfer)
 
 # TODOs
 - [ ] add and configure which-key
