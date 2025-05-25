@@ -1,11 +1,12 @@
 -- based on the lsp config from kickstart.nvim
 return { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
+    tag = 'v1.7.0',
     dependencies = {
         -- Automatically install LSPs and related tools to stdpath for Neovim
-        'williamboman/mason.nvim',
-        'williamboman/mason-lspconfig.nvim',
-        'WhoIsSethDaniel/mason-tool-installer.nvim',
+        { 'mason-org/mason.nvim', tag='v1.11.0' },
+        { 'mason-org/mason-lspconfig.nvim', tag='v1.32.0' },
+        { 'WhoIsSethDaniel/mason-tool-installer.nvim', commit='374c78d' },
         'hrsh7th/nvim-cmp',
     },
     config = function()
