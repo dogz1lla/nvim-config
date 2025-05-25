@@ -21,6 +21,7 @@ return {
                 "yaml",
                 "vimdoc",
                 "comment",
+                "clojure",
             },
             highlight = {
                 enable = true,
