@@ -24,10 +24,11 @@ map("n", "<C-l>", "<C-w>l")
 
 -- fzf and grep
 map("n", "<leader>f",  ":lua require('fzf-lua').files()<CR>")                                  -- search cwd
-map("n", "<leader>Fh", ":lua require('fzf-lua').files({ cwd = '~/' })<CR>")                    -- search home
-map("n", "<leader>Fc", ":lua require('fzf-lua').files({ cwd = '~/.config/nvim-config' })<CR>") -- search .config
-map("n", "<leader>Ff", ":lua require('fzf-lua').files({ cwd = '..' })<CR>")                    -- search above
-map("n", "<leader>Fr", ":lua require('fzf-lua').resume()<CR>")                                 -- last search
+map("n", "<leader>sh", ":lua require('fzf-lua').files({ cwd = '~/' })<CR>")                    -- search home
+map("n", "<leader>sc", ":lua require('fzf-lua').files({ cwd = '~/.config' })<CR>")             -- search .config
+map("n", "<leader>sn", ":lua require('fzf-lua').files({ cwd = '~/.config/nvim-config' })<CR>") -- search .config/nvim-config
+map("n", "<leader>sa", ":lua require('fzf-lua').files({ cwd = '..' })<CR>")                    -- search above
+map("n", "<leader>sl", ":lua require('fzf-lua').resume()<CR>")                                 -- last search
 map("n", "<leader>g",  ":lua require('fzf-lua').grep()<CR>")                                   -- grep
 map("n", "<leader>G",  ":lua require('fzf-lua').grep_cword()<CR>")                             -- grep word under cursor
 map("n", "<leader>gs", ":lua require('fzf-lua').git_status()<CR>")                             -- git status
