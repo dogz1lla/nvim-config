@@ -46,5 +46,5 @@ vim.diagnostic.config({
 
 -- vertical line at 'colorcolumn' symbols
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey1]]
-vim.cmd [[highlight Search ctermbg=red ctermfg=0 guibg=red guifg=0]]
-vim.cmd [[highlight CurSearch ctermbg=darkred ctermfg=0 guibg=darkred guifg=0]]
+vim.cmd [[highlight Search ctermbg=blue ctermfg=0 guibg=green guifg=0]]
+vim.cmd [[highlight CurSearch ctermbg=black ctermfg=white guibg=darkred guifg=0]]
