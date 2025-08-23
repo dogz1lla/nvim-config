@@ -41,3 +41,4 @@ map("n", "<leader>w",  ":w<CR>")               -- write but one less key
 map("n", "<leader>mv", ":!mv % ")              -- move a file to a new dir
 map("n", "<leader>R",  ":so %<CR>")            -- reload neovim config
 map("n", "<leader>W",  ":set wrap!<CR>")       -- toggle wrap
+map("n", "<Esc>",      "<Cmd>noh<CR><Esc>")    -- remove search highlight with esc
