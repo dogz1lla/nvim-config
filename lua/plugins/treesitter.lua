@@ -30,7 +30,7 @@ return {
             -- enable indentation
             indent = { enable = true },
         })
-        -- TODO highlight (doesnt work by default for some reason)
+        -- TODO/NOTE highlights
         vim.api.nvim_set_hl(0, "@comment.todo", { ctermfg = "yellow",  fg = "#FFFF00" })
         vim.api.nvim_set_hl(0, "@comment.note", { ctermfg = "magenta", fg = "#FFFF00" })
     end,
