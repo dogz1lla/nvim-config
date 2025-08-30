@@ -1,4 +1,4 @@
-local options = {
+Local options = {
     -- copied from bread's config
     ruler = false, --disable extra numbering
     showmode = false, --not needed due to lualine
@@ -45,6 +45,7 @@ vim.diagnostic.config({
 })
 
 -- vertical line at 'colorcolumn' symbols
+vim.cmd [[highlight Visual      ctermbg=black ctermfg=none]]
 vim.cmd [[highlight ColorColumn ctermbg=black                              guibg=grey1]]
 vim.cmd [[highlight CurSearch   ctermbg=blue  ctermfg=black  guibg=green   guifg=0]]
 vim.cmd [[highlight Search      ctermbg=black ctermfg=yellow guibg=darkred guifg=0]]
