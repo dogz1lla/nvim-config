@@ -1,4 +1,4 @@
-Local options = {
+local options = {
     -- copied from bread's config
     ruler = false, --disable extra numbering
     showmode = false, --not needed due to lualine
