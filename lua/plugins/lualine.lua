@@ -208,20 +208,20 @@ return {
             color = { fg = colors.violet, gui = 'bold' },
         }
 
-        ins_right {
-            'diff',
-            symbols = {
-                added    = '', -- nerdfont: eadc
-                modified = '', -- nerdfont: eade
-                removed  = '', -- nerdfont: eadf
-            },
-            diff_color = {
-                added = { fg = colors.green },
-                modified = { fg = colors.orange },
-                removed = { fg = colors.red },
-            },
-            cond = conditions.hide_in_width,
-        }
+        -- ins_right {
+        --     'diff',
+        --     symbols = {
+        --         added    = '', -- nerdfont: eadc
+        --         modified = '', -- nerdfont: eade
+        --         removed  = '', -- nerdfont: eadf
+        --     },
+        --     diff_color = {
+        --         added = { fg = colors.green },
+        --         modified = { fg = colors.orange },
+        --         removed = { fg = colors.red },
+        --     },
+        --     cond = conditions.hide_in_width,
+        -- }
 
         -- NOTE: rightmost symbol, put something fancy if necessary
         ins_right {
