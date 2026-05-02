@@ -13,7 +13,7 @@ end
 map("n", "<leader><leader>", ":lua require('fzf-lua').buffers()<CR>")
 map("n", "<leader>bn",       ":bnext<CR>")
 map("n", "<leader>bp",       ":bprevious<CR>")
-map("n", "<leader>q",        ":bd<CR>")
+-- map("n", "<leader>q",        ":bd<CR>")  -- update: using q for vimwiki now
 map("n", "<leader>vs",       ":vsplit<CR>:bnext<CR>")  -- ver split + open next buffer
 
 -- windows - ctrl nav, fn resize
@@ -33,6 +33,9 @@ map("n", "<leader>g",  ":lua require('fzf-lua').grep()<CR>")                    
 map("n", "<leader>G",  ":lua require('fzf-lua').grep_cword()<CR>")                             -- grep word under cursor
 map("n", "<leader>gs", ":lua require('fzf-lua').git_status()<CR>")                             -- git status
 map("n", "<leader>gc", ":lua require('fzf-lua').git_commits()<CR>")                            -- git commit history
+
+-- vimwiki
+map("n", "<leader>qw", ":VimwikiIndex<CR>")  -- Open Vimwiki index
 
 -- misc
 map("n", "<leader>s",  ":%s//g<Left><Left>")   -- replace all
