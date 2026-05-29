@@ -29,6 +29,9 @@ return { -- LSP Configuration & Plugins
                     vim.keymap.set('n', keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
                 end
 
+                -- Jump to the definition of the word under your cursor.
+                map('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+
                 -- Rename the variable under your cursor.
                 --  Most Language Servers support renaming across files, etc.
                 map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
